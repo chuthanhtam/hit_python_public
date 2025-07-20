@@ -1,0 +1,15 @@
+ #BÀI 1
+
+thang = int(input("Nhập tháng: "))
+nam = int(input("Nhập năm: "))
+
+if thang == 1 or thang == 3 or thang == 5 or thang == 7 or thang == 8 or thang == 10 or thang == 12:
+  print("Tháng", thang, "năm", nam, "có 31 ngày")
+if thang == 4 or thang == 6 or thang == 9 or thang == 11:
+  print("Tháng", thang, "năm", nam, "có 30 ngày")
+if thang == 2:
+  if nam % 400 == 0 or (nam % 4 == 0 and nam % 100 != 0):
+    print("Tháng", thang, "năm", nam, "có 29 ngày")
+  else:
+    print("Tháng", thang, "năm", nam, "có 28 ngày")
+    
